@@ -91,7 +91,7 @@ body:
       placeholder: Take a screenshot and paste it in here.
     validations:
       required: false
-  - type: Textarea
+  - type: textarea
     id: notes
     attributes:
       label: Other Notes
