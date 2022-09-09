@@ -15,6 +15,7 @@ body:
     attributes:
       label: Issue Searching
       description: Have you searched for similar issues?
+      options:
         - label: I have searched for similar issues that are **open**.
           required: true
         - label: I have searched for similar issues that are **closed**.
