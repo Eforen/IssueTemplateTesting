@@ -1,0 +1,60 @@
+name: Bug Report
+description: Create a report to help us improve
+title: "[BUG] Your Descriptive Title Here"
+labels: [bug, triage]
+assignees:
+  - eforen
+  - brannonh
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this bug report!
+  - type: checkboxes
+    id: searched-req
+    attributes:
+      label: Issue Searching
+      description: Have you searched for similar issues?
+        - label: I have searched for similar issues that are **open**.
+          required: true
+        - label: I have searched for similar issues that are **closed**.
+          required: true
+  - type: dropdown
+    id: otherIssues
+    attributes:
+      label: OtherIssues
+      description: When you preformed the search what did you find?
+      options:
+        - No other similar issues closed or open.
+        - Similar issues open, however I feel this issue is difrent enough to warrent a new issue.
+        - Similar issues closed, however I feel this issue warrent a new issue.
+        - Similar issues closed, however I could not figure out how to reopen the other issue.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of the plugin are you running?
+      options:
+        - 1.1.1 (Prerelease Built from Source)
+        - 1.1.0 (Current Version)
+        - < 1.1.0 (Old Versions)
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevent log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  
+
+  

@@ -1,5 +1,5 @@
 ---
-name: Bug report
+name: Bug report Old MD
 about: Create a report to help us improve
 title: "[BUG] Your Descriptive Title Here"
 labels: bug
