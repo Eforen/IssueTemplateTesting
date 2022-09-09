@@ -1,6 +1,6 @@
 name: Bug Report
 description: Create a report to help us improve
-title: "[BUG] Your Descriptive Title Here"
+title: "[BUG] Title"
 labels: [bug, triage]
 assignees:
   - eforen
@@ -31,12 +31,39 @@ body:
         - Similar issues closed, however I feel this issue warrent a new issue.
         - Similar issues closed, however I could not figure out how to reopen the other issue.
   - type: textarea
-    id: what-happened
+    id: description
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Description
+      description: Describe this bug
+      placeholder: Tell us what you see! Or better take a screenshot and paste it in here.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: What steps are needed to reproduce this bug?
+      placeholder: |
+        Go to '...'
+        Click on '....'
+        Scroll down to '....'
+        See error
+    validations:
+      required: true
+  - type: textarea
+    id: expectation
+    attributes:
+      label: Expected Result
+      description: What you expected to happen.
+      placeholder: I expected to see a potato.
+    validations:
+      required: true
+  - type: textarea
+    id: actuality
+    attributes:
+      label: Actual Result
+      description: What happened instead of your expectation.
+      placeholder: It displayed a tomato.
     validations:
       required: true
   - type: dropdown
@@ -56,6 +83,19 @@ body:
       label: Relevent log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+      placeholder: Take a screenshot and paste it in here.
+    validations:
+      required: false
+  - type: Textarea
+    id: notes
+    attributes:
+      label: Other Notes
+      description: "Anything else you want to tell us."
   - type: markdown
     attributes:
       value: |
