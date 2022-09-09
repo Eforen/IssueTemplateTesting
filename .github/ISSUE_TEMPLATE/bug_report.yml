@@ -56,3 +56,7 @@ body:
       label: Relevent log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
+  - type: markdown
+    attributes:
+      value: |
+        Do you have a grayed out submit button that is unclickable? If so that means you need to complete the feilds that have a red asterisk next to them.
